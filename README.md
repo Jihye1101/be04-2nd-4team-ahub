@@ -40,7 +40,7 @@
 Ahub 프로젝트의 산출 결과물은 다음과 같습니다.
 
 - 요구사항 명세서 : 프로젝트의 요구사항을 정리하여 기능별로 분류해둔 문서 
-- 도메인 주도 개발(DDD) 설계도 : 프로젝트의 기능을 도메인으로 나누고, 생성된 도메인을 중요도에 따라 핵심,지원,일반으로 분류 
+- 도메인 기반 개발(DDD) Context-map : 프로젝트의 기능을 도메인으로 나누고, 생성된 도메인을 중요도에 따라 핵심,지원,일반으로 분류 
 - 데이터베이스 논리/물리모델 : 프로젝트에 사용할 데이터베이스 생성을 위해 논리/물리 모델링을 구현 
 - 웹 어플리케이션 실행 파일 : 실제 기능들이 구현되는 프로젝트 파일   
 - 테스트 케이스 정의서: 요구사항에 해당하는 테스트를 작성 및 진행, 해당 결과를 보여주는 문서 
@@ -59,17 +59,12 @@ Ahub 프로젝트의 산출 결과물은 다음과 같습니다.
 
 작업 공간: 서울 동작구 보라매로 SFC빌딩, 원격 소통
 
-기술 스택: <img src ="https://img.shields.io/badge/MariaDB-&logo=MariaDB"/><img src="https://img.shields.io/badge/10.6-515151?style=for-the-badge" width="40" height="20"/> <img src="https://img.shields.io/badge/OpenJDK-&logo=openjdk"><img src="https://img.shields.io/badge/17.0.3-515151?style=for-the-badge" width="40" height="20"/>
-<img src ="https://img.shields.io/badge/Spring Boot-&logo=Spring Boot"/><img src="https://img.shields.io/badge/3.0.3-515151?style=for-the-badge" width="50" height="20"/> 
-<img src="https://img.shields.io/badge/Spring Security-&logo=spring security" width="70" height="20"/>
-<img src="https://img.shields.io/badge/Spring Data JPA-&logo=spring data jpa" width="100" height="20"/>
-<img src="https://img.shields.io/badge/MyBatis-&logo=mybatis" width="50" height="20"/>
-<img src="https://img.shields.io/badge/Spring Cloud Gateway-&logo=spring cloud gateway" width="100" height="20"/>
-
+기술 스택: 
+MariaDB 10.6, OpenJDK 17.0.7, Spring Boot Framework 3.0.3, Spring security 6 <br>
+Spring Data JPA, MyBatis, Spring Cloud Gateway 
 
 ## 2-2  일정관리 (WBS)
-
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/096d31f2-a412-42ac-9060-40e8ed8ea18d)
+![image](https://github.com/4jo-Phoenix/Alcohol_hub/assets/108782390/3437f986-b25e-4e4f-8947-75a3a5a241d1)
 
 <br>
 
@@ -80,23 +75,17 @@ Ahub 프로젝트의 산출 결과물은 다음과 같습니다.
 ## 3-1 요구사항 명세서
 ![image](https://github.com/4jo-Phoenix/Alcohol_hub/assets/108782390/c35bf325-8f7f-4afa-9dc5-db1f2e128f85)
     
-## 3-2. DDD 
-
-- Event Storming <br>
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/8010e804-a156-49aa-bdeb-6b9a92508bb0)
-
-- Bounded Context
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/bad37322-a598-4c3c-9977-cc160471a7b1)
-
-- Context Map
+## 3-2. DDD Context map
 ![image](https://github.com/4jo-Phoenix/Alcohol_hub/assets/108782390/b6a80658-3d07-4161-b46c-78e96c188ae9)
 
 
 ## 3-3 DB 모델링
 -  DA# 논리 모델 
+
 ![image](https://github.com/4jo-Phoenix/Alcohol_hub/assets/108782390/ac63be56-bcb9-4715-921d-21f4c9ccf151)
 
 - DA# 물리 모델
+
 ![image](https://github.com/4jo-Phoenix/Alcohol_hub/assets/108782390/092dabe3-8721-4ef9-9dbc-d9867ba43579)
 
 ## 3-4 네트워크 아키텍처 
@@ -765,103 +754,7 @@ Ahub 프로젝트의 산출 결과물은 다음과 같습니다.
 </details>
 
 
----
-
-- **REST-API(News) Definition Table**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/a346e044-24a1-41b7-bff2-12b22090ff67)
-
-<details>
-<summary>AH-NEWS-001</summary>
-
-- **Request Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/2d927184-72dc-47b2-9e73-23cffa972532)
-
-- **Request Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/c5ebd1b1-d2ef-41bb-a6a2-d469dde2d5c7)
-
-- **Response Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/bd430bf4-a28b-4860-b378-54118eec7866)
-
-- **Response Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/50ccc6b9-59ad-4e82-8c2d-c774eb8eb266)
-
 </details>
-
-<details>
-<summary>AH-NEWS-002</summary>
-
-- **Request Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/33d7edbf-2911-4c96-8e6b-abf1212cdf96)
-
-- **Request Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/1ee92c23-78d2-4134-a743-f67f78fed6cb)
-
-- **Response Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/20bbe6b1-eb44-41ef-8972-a0484baa242d)
-
-- **Response Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/6b0affa0-b2df-481e-a639-295957249b54)
-
-
-</details>
-
-<details>
-<summary>AH-NEWS-003</summary>
-
-- **Request Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/2278bc58-5e2f-41b5-baf6-54f1d037f2c5)
-
-
-- **Request Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/fde64076-41ad-46a9-919e-9eefeb4feef2)
-
-
-- **Response Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/6a6f7878-ef18-481c-b6a7-67d3331c78ab)
-
-
-- **Response Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/3eff8be9-4ed2-4541-8224-23bc4dc6e4e5)
-
-</details>
-
-<details>
-<summary>AH-NEWS-004</summary>
-
-- **Request Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/93a0c4f9-4dd0-4352-a9df-14f12305d361)
-
-
-- **Request Body**
-<br> none
-
-- **Response Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/b0647994-f8ba-4a12-918a-10f97cb02c66)
-
-
-- **Response Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/c7a07d44-542f-4849-aa46-228436b99742)
-
-</details>
-
-<details>
-<summary>AH-NEWS-005</summary>
-
-- **Request Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/ddb28564-3c7e-467a-baa8-cf5809966854)
-
-- **Request Body**
-<br> none
-
-- **Response Header**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/9d737e4b-7791-4512-8065-57eca5f90246)
-
-- **Response Body**
-![image](https://github.com/beyond-sw-camp/be04-2nd-4team-ahub/assets/108782390/953ba93a-d427-482c-bc3c-cc7dea1d7d42)
-
-</details>
-
-<br>
 
 # 5. 프로젝트 회고
 
@@ -875,7 +768,7 @@ Ahub 프로젝트의 산출 결과물은 다음과 같습니다.
 
 - **송동준** : 2차 프로젝트에서는 실제 개발 과정이랑 비슷한 느낌으로 말로만 들었던 백엔드를 통하여 실제 서버를 만든다는 점에서 의미가 깊은 프로젝트였던 거 같다 1차 프로젝트에 비해 방대한 양의 지식을 다루기에 따라가기는 힘들었으나 팀원들이 많은 도움을 주셔서 많은 것을 배우고 성장해 나가면서 무사히 프로젝트를 마칠 수 있었다. 다음 프런트 프로젝트는 미리미리 준비해나가며 더욱 열심히 하여 팀원들한테 더욱 도움이 될 수 있도록 노력하고 더욱더 만족스러운 결과를 얻기 위해 노력해야겠다.
 
-- **양지혜** : 
+- **양지혜** : 서버를 고려하여 개발한다는 점이 굉장히 어렵게 다가왔습니다. 또한 프로그래밍 언어에 서툴어 팀원들에게 많은 도움을 받았습니다. 저는 다른 욕심보다는 이 프로젝트에서 1인분을 하고자 노력하였습니다. 기능 구현 등을 좀 더 공부하여 해당 프로젝트를 고도화하고 싶습니다. 어제보다 오늘 더 노력하여 팀에서 필요한 역할을 할 수 있는 팀원이 되고자 노력하겠습니다.
 
 - **정태원** : 본격적으로 프로그래밍 언어를 사용하여 프로젝트를 만드는 것은 처음이라 굉장히 긴장했던 프로젝트 였습니다. 하지만 모두가 힘든 와중에도 누구하나 포기하지 않고 더 힘든 팀원을 도와 주어서 만족할만한 결과물이 나올 수 있었다고 생각합니다. 앞으로 프론트 엔드 서버까지 생성하며 진짜 웹 사이트를 만들 수 있을텐데, 현재의 결과물에 만족하지 않고 계속 고도화 시켜 나가며 프론트 프로젝트까지 쭉 좋은 결과를 이어갈 수 있으면 좋겠습니다. 
 
